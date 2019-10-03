@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Иришкин сайт</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header>
+      <h1 class="page-title">Иришкин сайт</h1>
+    </header>
+    <main>
+      <div class="avatar-container">
+        <img class="avatar" src="img/irishka.jpg" width="80" height="80" alt="Аватарка">
+      </div>
+      <section class="blog-navigation">
+        <h2>Привет! Меня зовут <a href="https://vk.com/irina_voskobojnikova" target="_blank">Иришка</a>, и это моя первая страничка. </h2>
+        <h2>Благодаря Владосу я теперь умею делать <span class="gradient">градиентную заливку</span>. Красиво, правда?</h2>
+        <h2>Оцени мой супер-сайт по пятибалльной шкале.
+          <select id="selectvalue">
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+            <option>25</option>
+          </select></h2>
+        <h2 id="my-element">А еще я могу в javascript. Ну-ка кликни меня.</h2>
+          <script>
+           var element = document.getElementById("my-element");
+            element.addEventListener("click", function() {
+            alert("Ты такой ведомый!");
+          });
+          </script>
+      </section>
+      <section>
+
+      </section>
+    </main>
+    <footer>
+      Подвал сайта
+    </footer>
+  </body>
+</html>
